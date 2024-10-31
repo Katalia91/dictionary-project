@@ -1,5 +1,5 @@
 import "./App.scss";
-import Dictionary from "./components/Dictionary.jsx";
+import Dictionary from "./components/Dictionary/Dictionary";
 
 function App() {
   return (
