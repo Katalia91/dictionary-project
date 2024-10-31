@@ -11,6 +11,8 @@ export default function Dictionary() {
     evt.preventDefault();
     alert(`Searching for ${keyword}`);
     const apiKey = process.env.REACT_APP_DICTIONARY_API_KEY;
+
+    // docs: https://www.shecodes.io/learn/apis/dictionary
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
   }
