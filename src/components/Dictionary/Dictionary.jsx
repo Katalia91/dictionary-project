@@ -4,7 +4,7 @@ import Results from "../Results/Results";
 
 export default function Dictionary() {
   let [keyword, setKeyWord] = useState("");
-  let [results, setResults] = useState({});
+  let [results, setResults] = useState(null);
 
   function handleResponse(response) {
     console.log(response.data);
@@ -12,7 +12,6 @@ export default function Dictionary() {
   }
   function search(evt) {
     evt.preventDefault();
-    alert(`Searching for ${keyword}`);
     const apiKey = process.env.REACT_APP_DICTIONARY_API_KEY;
 
     // docs: https://www.shecodes.io/learn/apis/dictionary
@@ -29,7 +28,7 @@ export default function Dictionary() {
       <form onSubmit={search}>
         <input type="search" onChange={handleKeywordChange} />
       </form>
-      <Results />
+      <Results results={results} />
     </div>
   );
 }
