@@ -1,0 +1,26 @@
+@use '../../variables' as *;
+
+.dictionary {
+  form {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+    input,
+    button {
+      padding: 1.125rem;
+      border: 0px;
+    }
+    input {
+      width: 50%;
+      border-bottom: 2px solid $dark-2;
+    }
+    button {
+      width: 100px;
+      color: $dark-2;
+      border-radius: 0.25rem;
+      background-color: $light-1;
+      box-shadow: rgba($light-1, 0.5) 0px 4px 12px;
+      cursor: pointer;
+    }
+  }
+}

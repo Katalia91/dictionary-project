@@ -4,11 +4,15 @@ import Meaning from "../Meaning/Meaning";
 export default function Results({ results }) {
   if (results) {
     return (
-      <div className="Results">
-        <p>You searched for: {results.word}</p>
+      <div className="results">
+        <div>You searched for: {results.word}</div>
+        <ul>
         {results.meanings.map((meaning, index) => (
+        <li key={index} >
           <Meaning meaning={meaning} />
+        </li>
         ))}
+        </ul>
       </div>
     );
   } else {
