@@ -10,7 +10,19 @@ function App() {
         <main>
           <Dictionary />
         </main>
-        <footer>Coded by </footer>
+        <footer>
+          This project was coded by 👩‍💻Natalia Kur and is{" "}
+          <span className="footer">
+            <a
+              href="https://github.com/Katalia91/dictionary-project"
+              target="_blank"
+              rel="noreferrer"
+            >
+              open-sourced
+            </a>
+          </span>
+          .
+        </footer>
       </div>
     </div>
   );
