@@ -1,0 +1,13 @@
+@use '../../variables' as *;
+
+.word {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.results-wrapper {
+  .results {
+    list-style: none;
+    padding: 0;
+  }
+}

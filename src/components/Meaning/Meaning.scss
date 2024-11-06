@@ -1,6 +1,44 @@
+@use '../../variables' as *;
 .meaning {
   margin-bottom: 1rem;
+  padding: 2em;
+  border-radius: 0.5rem;
+  background-color: $light-default;
 }
-.part-of-speech {
-  font-weight: 700;
+
+/* Highlighter effect, credits: Shaun Chuang https://codepen.io/shaunchuang/pen/MWvEXNN */
+
+.part-of-speech-wrapper {
+  font-size: 3rem;
+  position: relative;
+  .part-of-speech {
+    background-color: $light-default;
+    z-index: 1;
+    position: relative;
+  }
+  &.noun {
+    &::before {
+      background-color: $light-1;
+    }
+  }
+  &.adjective {
+    &::before {
+      background-color: $light-2;
+    }
+  }
+  &.verb {
+    &::before {
+      background-color: $light-3;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    left: 7%;
+    bottom: 1rem;
+    width: 150px;
+    height: 1.25rem;
+    transform: skew(-12deg) translateX(-50%);
+    z-index: -1;
+  }
 }

@@ -1,0 +1,19 @@
+@use '../../variables' as *;
+
+.synonyms {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+  border-radius: 0.5rem;
+  .synonym {
+    display: block;
+    width: fit-content;
+    padding: 0.75rem 1.25rem;
+    border-radius: 2rem;
+    background: $green-1;
+  }
+}
