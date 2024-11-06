@@ -3,10 +3,14 @@ import "./Meaning.scss";
 import Synonyms from "../Synonyms/Synonyms";
 
 export default function Meaning({ meaning }) {
-  console.log(meaning);
+  console.log("This is meaning", meaning);
+  const partOfSpeech = meaning.partOfSpeech;
   return (
-    <div className="meaning">
-      <div className="part-of-speech">{meaning.partOfSpeech}</div>
+    <li className="meaning">
+      <div className={`part-of-speech-wrapper ${partOfSpeech}`}>
+        <div className="part-of-speech">{meaning.partOfSpeech}</div>
+      </div>
+
       {!!meaning.definition && (
         <div className="definition-wrapper">
           <span>Definition: </span>
@@ -20,6 +24,6 @@ export default function Meaning({ meaning }) {
         </div>
       )}
       {!!meaning.synonyms && <Synonyms synonyms={meaning.synonyms} />}
-    </div>
+    </li>
   );
 }
