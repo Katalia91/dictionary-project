@@ -3,7 +3,13 @@
   margin-bottom: 1rem;
   padding: 2em;
   border-radius: 0.5rem;
-  background-color: $light-default;
+  background-color: var(--light-default);
+  .definition-wrapper,
+  .example-wrapper {
+    span {
+      font-family: var(--secondary-font);
+    }
+  }
 }
 
 /* Highlighter effect, credits: Shaun Chuang https://codepen.io/shaunchuang/pen/MWvEXNN */
@@ -11,32 +17,32 @@
 .part-of-speech-wrapper {
   font-size: 3rem;
   position: relative;
+  z-index: 0;
   .part-of-speech {
-    background-color: $light-default;
     z-index: 1;
     position: relative;
   }
   &.noun {
     &::before {
-      background-color: $light-1;
+      background-color: var(--light-1);
     }
   }
   &.adjective {
     &::before {
-      background-color: $light-2;
+      background-color: var(--light-2);
     }
   }
   &.verb {
     &::before {
-      background-color: $light-3;
+      background-color: var(--light-3);
     }
   }
   &::before {
     content: "";
     position: absolute;
-    left: 7%;
-    bottom: 1rem;
-    width: 150px;
+    left: 5%;
+    bottom: 7px;
+    width: 104px;
     height: 1.25rem;
     transform: skew(-12deg) translateX(-50%);
     z-index: -1;

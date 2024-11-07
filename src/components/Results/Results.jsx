@@ -4,7 +4,7 @@ import "./Results.scss";
 
 export default function Results({ results }) {
   if (results) {
-    const order = ["noun", "verb", "adjective"]; // Add more parts of speech as needed
+    const order = ["noun", "verb", "adjective"];
 
     // Sort the meanings based on the order of parts of speech
     const sortedMeanings = [...results.meanings].sort((a, b) => {

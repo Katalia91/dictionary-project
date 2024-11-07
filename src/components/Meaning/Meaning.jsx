@@ -18,7 +18,7 @@ export default function Meaning({ meaning }) {
         </div>
       )}
       {!!meaning.example && (
-        <div className="exmaple-wrapper">
+        <div className="example-wrapper">
           <span>Example: </span>
           <span>{meaning.example}</span>
         </div>

@@ -14,14 +14,14 @@
     }
     input {
       width: 90%;
-      border-bottom: 2px solid $dark-2;
+      border-bottom: 2px solid var(--dark-2);
     }
     button {
       width: 120px;
-      color: $dark-2;
+      color: var(--dark-2);
       border-radius: 0.25rem;
-      background-color: $light-1;
-      box-shadow: rgba($light-1, 0.5) 0px 4px 12px;
+      background-color: var(--pink);
+      box-shadow: rgba(var(--pink), 0.5) 0px 4px 12px;
       cursor: pointer;
     }
   }
