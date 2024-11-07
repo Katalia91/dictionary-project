@@ -1,9 +1,9 @@
-@use '../../variables' as *;
 .meaning {
   margin-bottom: 1rem;
   padding: 2em;
   border-radius: 0.5rem;
   background-color: var(--light-default);
+  box-shadow: 0 30px 50px var(--pink-bg);
   .definition-wrapper,
   .example-wrapper {
     span {

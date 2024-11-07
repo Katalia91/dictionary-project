@@ -1,3 +1,6 @@
+@use 'variables' as *;
+@use 'typography' as *;
+
 body {
   margin: 0;
   font-family: var(--primary-font);

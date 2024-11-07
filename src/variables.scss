@@ -3,7 +3,7 @@
 :root {
   --light-default: #fcffff;
   --pink: #faddf6;
-  --pink-bg: rgba(250, 221, 246, 0.341);
+  --pink-bg: rgba(250, 221, 246, 0.3);
   --text-default: #1c1a24;
   --light-1: #e5cbff;
   --light-2: #cbffff;
@@ -16,4 +16,14 @@
   // Fonts
   --primary-font: "Poppins", sans-serif;
   --secondary-font: "Gaegu", sans-serif;
+  --heading-font: "Bungee Shade", sans-serif;
+
+  // Typography
+  --font-size: 1rem;
+  --font-size-h1: 2.5rem;
+  --font-size-h2: 2rem;
+  --font-size-h3: 1.5rem;
+  --font-size-h4: 1.25rem;
+  --font-size-small: 0.75rem;
+  --font-size-medium: 1.5rem;
 }

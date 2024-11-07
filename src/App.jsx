@@ -6,6 +6,8 @@ function App() {
     <div className="App">
       <div className="container">
         <header className="app-header">
+          <div className="chevron"></div>
+          <div className="chevron-reverse"></div>
           <h1>Dictionary</h1>
         </header>
         <main>

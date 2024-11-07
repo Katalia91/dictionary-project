@@ -1,8 +1,7 @@
-@use 'variables' as *;
-
 .container {
   max-width: 800px;
   margin: 0 auto;
+  margin-top: 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -10,4 +9,75 @@
 }
 footer {
   margin-top: auto;
+}
+
+.app-header {
+  position: relative;
+  z-index: 0;
+  h1 {
+    font-family: var(--heading-font);
+    z-index: 1;
+    position: relative;
+  }
+  .chevron {
+    --s: 20px; /* control the shape (can be percentage) */
+
+    height: 60px;
+    aspect-ratio: 5/6;
+    clip-path: polygon(
+      100% 0,
+      calc(100% - var(--s)) 0,
+      0 50%,
+      calc(100% - var(--s)) 100%,
+      100% 100%,
+      var(--s) 50%
+    );
+    background: #000000;
+    position: absolute;
+    left: -60px;
+    top: -5px;
+  }
+  .chevron-reverse {
+    --s: 20px; /* control the shape (can be percentage) */
+
+    height: 60px;
+    aspect-ratio: 5/6;
+    clip-path: polygon(
+      0 0,
+      var(--s) 0,
+      100% 50%,
+      var(--s) 100%,
+      0 100%,
+      calc(100% - var(--s)) 50%
+    );
+    background: #000000;
+    position: absolute;
+    left: 380px;
+    top: -5px;
+  }
+
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   left: 40px;
+  //   bottom: 30px;
+  //   width: 30%;
+  //   height: 100%;
+  //   transform: skew(-12deg) translateX(-50%);
+  //   background-color: #faddf6;
+  //   border-radius: 50px 0 20px 0;
+  //   z-index: -1;
+  // }
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   left: 10px;
+  //   bottom: 15px;
+  //   width: 30%;
+  //   height: 100%;
+  //   transform: skew(-12deg) translateX(-50%);
+  //   background-color: rgba(203, 255, 255, 0.58);
+  //   border-radius: 20px 0 20px 0;
+  //   z-index: 0;
+  // }
 }
