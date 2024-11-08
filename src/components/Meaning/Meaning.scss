@@ -1,8 +1,8 @@
-@use '../../styles';
+@use '../../styles' as *;
 
 .meaning {
   margin-bottom: 1rem;
-  padding: 2rem 3rem;
+  padding: 1.5rem 2rem;
   border-radius: 0.5rem;
   background-color: var(--light-default);
   box-shadow: 0 30px 50px var(--pink-bg);
@@ -11,6 +11,9 @@
     span {
       font-family: var(--secondary-font);
     }
+  }
+  @include tablet {
+    padding: 2rem 3rem;
   }
 }
 
@@ -44,7 +47,10 @@
     position: absolute;
     left: 5%;
     bottom: 7px;
-    width: 104px;
+    width: 60px;
+    @include tablet {
+      width: 104px;
+    }
     height: 1.25rem;
     transform: skew(-12deg) translateX(-50%);
     z-index: -1;
