@@ -39,3 +39,6 @@ This launches the test runner in the interactive watch mode.
 This application is deployed automatically using Netlify's continuous deployment feature. Whenever changes are pushed to the main branch of the repository, Netlify will build and deploy a new version of the application.
 
 You can view the live application [here](https://natalias-dictionary.netlify.app/)
+
+## API documentation
+https://www.shecodes.io/learn/apis/dictionary
