@@ -1,5 +1,5 @@
 # English Dictionary
-English Word Explorer is a single-page application built with React, allowing users to search for English words and get detailed information including definitions, pronunciation, synonyms, and related images. The project is created with Create React App and uses APIs provided by SheCodes. The styling is done with SCSS.
+English Dictionary is a single-page application built with React, allowing users to search for English words and get detailed information including definitions, pronunciation, synonyms, and related images. The project is created with Create React App and uses APIs provided by SheCodes. The styling is done with SCSS.
 
 ## Features
 
