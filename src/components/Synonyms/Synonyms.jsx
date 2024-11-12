@@ -2,7 +2,6 @@ import React from "react";
 import "./Synonyms.scss";
 
 export default function Synonyms({ synonyms }) {
-  console.log(synonyms);
   return (
     <div>
       <ul className="synonyms">

@@ -3,7 +3,6 @@ import "./Meaning.scss";
 import Synonyms from "../Synonyms/Synonyms";
 
 export default function Meaning({ meaning }) {
-  console.log("This is meaning", meaning);
   const partOfSpeech = meaning.partOfSpeech;
   return (
     <li className="meaning">
