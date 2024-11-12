@@ -15,7 +15,7 @@ export default function Results({ results }) {
       <div className="results-wrapper">
         <div className="word">
           <div>{results.word}</div>
-          <div>/{results.phonetic}/</div>
+          <div>{!!results.phonetic && `/${results.phonetic}/`}</div>
         </div>
         <div></div>
         <ul className="results">
