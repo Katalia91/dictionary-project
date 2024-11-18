@@ -14,7 +14,9 @@ export default function Results({ results }) {
     return (
       <div className="results-wrapper">
         <div className="word">
-          <div>{results.word}</div>
+          <div>You searched for:</div>
+          <strong>{results.word}</strong>
+
           <div>{!!results.phonetic && `/${results.phonetic}/`}</div>
         </div>
         <div></div>
