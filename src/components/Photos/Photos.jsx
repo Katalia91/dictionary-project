@@ -7,7 +7,12 @@ export default function Photos({ photos }) {
     return (
       <div className="photos-wrapper">
         {photos.map((photo, index) => (
-          <a key={index} href={photo.url} target="_blank" rel="noreferrer">
+          <a
+            key={index}
+            href={photo.src.original}
+            target="_blank"
+            rel="noreferrer"
+          >
             <figure>
               <img src={photo.src.original} alt="" />
               {photo.photographer && photo.photographer !== "NO  NAME" && (

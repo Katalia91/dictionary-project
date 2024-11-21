@@ -24,9 +24,9 @@ export default function Dictionary() {
     let apiUrl = `https://api.shecodes.io/dictionary/v1/define?word=${keyword}&key=${apiKey}`;
     axios.get(apiUrl).then(handleResponse);
 
-    const pexelsApiKey = process.env.REACT_APP_IMAGES_API_KEY;
-    let pexelsApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${pexelsApiKey}`;
-    axios.get(pexelsApiUrl).then(handlePexelsResponse);
+    const photosApiKey = process.env.REACT_APP_IMAGES_API_KEY;
+    let photosApiUrl = `https://api.shecodes.io/images/v1/search?query=${keyword}&key=${photosApiKey}`;
+    axios.get(photosApiUrl).then(handlePexelsResponse);
   }
 
   function handleKeywordChange(evt) {
