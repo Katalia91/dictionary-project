@@ -14,10 +14,7 @@ export default function Photos({ photos }) {
             rel="noreferrer"
           >
             <figure>
-              <img src={photo.src.original} alt="" />
-              {photo.photographer && photo.photographer !== "NO  NAME" && (
-                <figcaption>Credit: {photo.photographer}</figcaption>
-              )}
+              <img src={photo.src.original} alt={photo.alt} />
             </figure>
           </a>
         ))}
