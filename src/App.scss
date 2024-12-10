@@ -7,7 +7,10 @@
   padding: 2rem;
 }
 footer {
+  font-size: var(--font-size);
   margin-top: auto;
+  @include light-box;
+  padding: 1rem;
 }
 
 .app-header {
@@ -54,29 +57,4 @@ footer {
     left: 380px;
     top: -5px;
   }
-
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   left: 40px;
-  //   bottom: 30px;
-  //   width: 30%;
-  //   height: 100%;
-  //   transform: skew(-12deg) translateX(-50%);
-  //   background-color: #faddf6;
-  //   border-radius: 50px 0 20px 0;
-  //   z-index: -1;
-  // }
-  // &::after {
-  //   content: "";
-  //   position: absolute;
-  //   left: 10px;
-  //   bottom: 15px;
-  //   width: 30%;
-  //   height: 100%;
-  //   transform: skew(-12deg) translateX(-50%);
-  //   background-color: rgba(203, 255, 255, 0.58);
-  //   border-radius: 20px 0 20px 0;
-  //   z-index: 0;
-  // }
 }

@@ -1,10 +1,14 @@
-@use '../../styles';
+@use '../../styles' as *;
 
 .dictionary {
   margin-top: 2.5rem;
   border-radius: 0.75rem;
   .input-wrapper {
     display: flex;
+    flex-direction: column;
+    @include tablet {
+      flex-direction: row;
+    }
     gap: 0.5rem;
     margin: 1rem 0;
     input,
@@ -15,11 +19,17 @@
       font-size: var(--font-size-medium);
     }
     input {
-      width: 90%;
+      width: 100%;
+      @include tablet {
+        width: 90%;
+      }
       border-bottom: 2px solid var(--dark-2);
     }
     button {
-      width: 120px;
+      width: 100%;
+      @include tablet {
+        width: 120px;
+      }
       color: var(--dark-2);
       background-color: var(--pink);
       box-shadow: rgba(var(--pink), 0.5) 0px 4px 12px;

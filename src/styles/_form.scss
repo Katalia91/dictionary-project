@@ -1,0 +1,11 @@
+@use 'mixins' as *;
+
+form {
+  label,
+  input {
+    font-size: var(--font-size-h4);
+    @include tablet {
+      font-size: var(--font-size-h3);
+    }
+  }
+}
