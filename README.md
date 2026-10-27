@@ -25,3 +25,8 @@ npm start
 The application is deployed on Netlify.
 
 View the live demo [here](https://natalias-dictionary.netlify.app/)
+
+## To do
+- Add error handling for API requests.
+- Improve loading and error states.
+- Handle cases where no results are found.
